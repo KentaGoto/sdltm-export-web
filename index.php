@@ -106,17 +106,6 @@ function download($filename, $proc_folder){
 	echo "<a href=\"$proc_folder/$filename\">" . "$filename" . '</a>';
 }
 
-function getFiles($path) {
-	$result = array();
-	foreach(glob($path . "/*") as $file) {
-		if (is_dir($file)) {
-			$result = array_merge($result, getFiles($file));
-		}
-		$result[] = $file;
-	}
-	return $result;
-}
-
 ?>
 
 </body>
