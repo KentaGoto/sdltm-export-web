@@ -57,12 +57,12 @@ $(function(){
 <details>
 	<summary>README</summary>
 	<li>Zip the sdltm and upload it.</li>
+	<li>Capacity is limited to 200 MB.</li>
 </details>
 
 <?php
 $cwd = getcwd();
 $path = './temp';
-// $sdltmExport = './sdltm-export.pl';
 
 if (file_exists($path)){
 	// not doing
@@ -93,7 +93,7 @@ function mainProcess($file_fullpath, $path, $folder, $filename, $cwd){
 		chdir($proc_folder);
 		shell_exec("7z a \"$filename\" *");
 
-		download($filename, $proc_folder); // Download
+		download($filename, $proc_folder);
 	} else {
 		//Error
 		echo 'It could not be uploaded' . '<br />';
