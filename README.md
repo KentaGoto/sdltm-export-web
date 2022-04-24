@@ -1,7 +1,9 @@
 # sdltm-export-web 
 
-## Description
-Export source and target from Trados sdltm to xlsx.
+**CLI version**
+https://github.com/KentaGoto/sdltm-export
+
+An xlsx will be created with the source and target languages extracted from *.sdltm.
 
 ## Requirements
 - PHP 7
