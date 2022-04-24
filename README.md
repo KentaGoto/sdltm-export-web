@@ -1,6 +1,6 @@
 # sdltm-export-web 
 
-**CLI version**
+**CLI version**  
 https://github.com/KentaGoto/sdltm-export
 
 An xlsx will be created with the source and target languages extracted from *.sdltm.
